@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -26,14 +26,29 @@
                                 <rect key="frame" x="0.0" y="76" width="375" height="591"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VBl-VK-acb" customClass="VBContainerView" customModule="VBFramework">
+                                <rect key="frame" x="0.0" y="553" width="375" height="114"/>
+                                <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="114" id="12Z-Qx-Dbs"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="ITw-Sn-N4I" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3bs-QE-1af"/>
                             <constraint firstItem="ITw-Sn-N4I" firstAttribute="top" secondItem="2iV-sR-1he" secondAttribute="bottom" id="C9W-vI-6cD"/>
+                            <constraint firstItem="VBl-VK-acb" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="U6k-dD-rnN"/>
                             <constraint firstItem="2iV-sR-1he" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="VZ5-Z7-Q0g"/>
                             <constraint firstItem="ITw-Sn-N4I" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="YXB-tc-Fhx"/>
                             <constraint firstItem="ITw-Sn-N4I" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="aq8-x9-3WG"/>
+                            <constraint firstItem="VBl-VK-acb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="jVL-yL-LNv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="VBl-VK-acb" secondAttribute="bottom" id="laz-oJ-SDK"/>
                             <constraint firstItem="2iV-sR-1he" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="oyk-g9-bfP"/>
                             <constraint firstItem="2iV-sR-1he" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="zvH-jm-eap"/>
                         </constraints>
@@ -42,6 +57,7 @@
                     <connections>
                         <outlet property="sbarIssues" destination="2iV-sR-1he" id="QZ3-Xt-145"/>
                         <outlet property="tbvIssues" destination="ITw-Sn-N4I" id="qx2-Di-m4w"/>
+                        <outlet property="viewExample" destination="VBl-VK-acb" id="ufl-Qt-X00"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

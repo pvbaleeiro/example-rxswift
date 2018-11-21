@@ -1,0 +1,19 @@
+{
+  "name": "VBFramework",
+  "version": "0.0.1",
+  "summary": "Collection...",
+  "homepage": "https://github.com/pvbaleeiro",
+  "license": "MIT",
+  "authors": "Victor Baleeiro",
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source": {
+    "git": "URL",
+    "tag": "0.0.1"
+  },
+  "source_files": [
+    "VBFramework",
+    "VBFramework/**/*.{h,swift}"
+  ]
+}

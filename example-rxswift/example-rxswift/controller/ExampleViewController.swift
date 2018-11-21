@@ -11,6 +11,7 @@ import UIKit
 import RxSwift
 import RxCocoa
 import RxAlamofire
+import VBFramework
 
 class ExampleViewController: ViewController {
     
@@ -20,6 +21,7 @@ class ExampleViewController: ViewController {
     // Views
     @IBOutlet weak var tbvIssues: UITableView!
     @IBOutlet weak var sbarIssues: UISearchBar!
+    @IBOutlet weak var viewExample: VBContainerView!
     
     
     //-------------------------------------------------------------------------------------------------------------
@@ -30,6 +32,7 @@ class ExampleViewController: ViewController {
         
         //Calling setups...
         self.setupData()
+        self.setupLayout()
     }
     
     
@@ -72,7 +75,7 @@ class ExampleViewController: ViewController {
     }
     
     func setupLayout() {
-        
+        self.viewExample.maskedCorners = .layerMaxXMinYCorner
     }
     
     func setupText() {
